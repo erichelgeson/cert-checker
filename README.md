@@ -7,7 +7,7 @@ People forget, calendar reminders get lost. Don't be that guy.
 ## Example
 ```
 $ python cert_checker.py www.google.com 443
-server='www.google.com:443'|ssl_expires='Jun  7 19:43:27 2013 GMT'
+2013-02-05 22:41:38|server='www.google.com:443'|ssl_expires='Jun  7 19:43:27 2013 GMT'
 ```
 
 ## Requires
