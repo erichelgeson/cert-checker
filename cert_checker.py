@@ -1,8 +1,10 @@
 import M2Crypto
-import sys, ssl
+import sys, ssl, datetime
 
 def printlog(host, message):
-  print 'server=\'%s\'|ssl_expires=\'%s\'' % (host, message)
+  now = datetime.datetime.now()
+  datestr = now.strftime("%Y-%m-%d %H:%M:%S")
+  print '%s|server=\'%s\'|ssl_expires=\'%s\'' % (datestr, host, message)
 
 if len(sys.argv) != 3:
   printlog('', 'no host or port specified.')
